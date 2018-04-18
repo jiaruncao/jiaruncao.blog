@@ -14,3 +14,21 @@ s.index()
 ```
 cmp(str1,str2) #return -1,0,1
 ```
+#### 大小写
+```
+s.upper()
+s.lower()
+```
+#### 翻转字符串
+```
+str = s[::-1]
+```
+#### 查找字符串
+```
+s.find()
+```
+#### 分割字符串
+```
+s.split() #return a list 
+```
+
