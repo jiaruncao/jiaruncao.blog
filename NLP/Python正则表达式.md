@@ -24,6 +24,7 @@ pattern = re.compile(r'hello.*\!')
 match = pattern.match('hello, hanxiaoyang! How are you?')
  
 if match:
-* Blue    # 使用Match获得分组信息
+* Colors
+ * Blue    # 使用Match获得分组信息
     print match.group()
 ```
