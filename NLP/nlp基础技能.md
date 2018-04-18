@@ -40,4 +40,13 @@ s.split() #return a list
 **[正则表达式在线验证工具](http://regexr.com/)**  
 **[正则表达式语法](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95.jpg)**
 
+#### re模块  
+Python通过re模块提供对正则表达式的支持。  
+
+使用re的一般步骤是
+
+1.将正则表达式的字符串形式编译为Pattern实例
+2.使用Pattern实例处理文本并获得匹配结果（一个Match实例）
+3.使用Match实例获得信息，进行其他的操作。
+
 
