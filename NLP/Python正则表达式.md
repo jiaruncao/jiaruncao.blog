@@ -5,7 +5,7 @@
 **[正则表达式在线验证工具](http://regexr.com/)**  
 **[正则表达式语法](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95.jpg)**
 
-#### re模块  
+## re模块  
 Python通过re模块提供对正则表达式的支持。  
 
 使用re的一般步骤是
@@ -37,7 +37,7 @@ if match:
 ###### match方法：
 * group([group1, …]): 
 获得一个或多个分组截获的字符串；指定多个参数时将以元组形式返回。group1可以使用编号也可以使用别名；编号0代表整个匹配的子串；不填写参数时，返回group(0)；没有截获字符串的组返回None；截获了多次的组返回最后一次截获的子串。
-*g roups([default]): 
+* groups([default]): 
 以元组形式返回全部分组截获的字符串。相当于调用group(1,2,…last)。default表示没有截获字符串的组以这个值替代，默认为None。
 * groupdict([default]): 
 返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。
@@ -49,3 +49,54 @@ if match:
 返回(start(group), end(group))。
 * expand(template): 
 将匹配到的分组代入template中然后返回。template中可以使用\id或\g、\g引用分组，但不能使用编号0。\id与\g是等价的；但\10将被认为是第10个分组，如果你想表达\1之后是字符'0'，只能使用\g<1>0。
+## 使用Pattern模块
+#### 按照能够匹配的子串将string分割后返回列表
+```
+p = re.compile(r'\d+')
+print p.split('one1two2three3four4')
+```
+['one', 'two', 'three', 'four', '']
+#### 搜索string，以列表形式返回全部能匹配的子串
+```
+p = re.compile(r'\d+')
+print p.findall('one1two2three3four4')
+```
+['1', '2', '3', '4']
+#### 搜索string，返回一个顺序访问每一个匹配结果（Match对象）的迭代器
+```
+p = re.compile(r'\d+')
+for m in p.finditer('one1two2three3four4'):
+    print m.group()
+```
+1  
+2  
+3  
+4  
+#### 使用repl替换string中每一个匹配的子串后返回替换后的字符串
+``` 
+p = re.compile(r'(\w+) (\w+)')
+s = 'i say, hello hanxiaoyang!'
+ 
+print p.sub(r'\2 \1', s)
+ 
+def func(m):
+    return m.group(1).title() + ' ' + m.group(2).title()
+ 
+print p.sub(func, s)
+```
+say i, hanxiaoyang hello!  
+I Say, Hello Hanxiaoyang!
+#### 返回 (sub(repl, string[, count]), 替换次数)
+```
+p = re.compile(r'(\w+) (\w+)')
+s = 'i say, hello hanxiaoyang!'
+ 
+print p.subn(r'\2 \1', s)
+ 
+def func(m):
+    return m.group(1).title() + ' ' + m.group(2).title()
+ 
+print p.subn(func, s)
+```
+('say i, hanxiaoyang hello!', 2)  
+('I Say, Hello Hanxiaoyang!', 2)
