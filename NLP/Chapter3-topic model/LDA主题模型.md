@@ -1,6 +1,6 @@
 # LDA主题模型
 
-### 什么是LDA主题模型？
+## 什么是LDA主题模型？
 Latent Dirichlet Allocation:  
 
 * 是一种无监督的贝叶斯模型
@@ -9,7 +9,7 @@ Latent Dirichlet Allocation:
   
  
   
-### LDA生成过程  
+## LDA生成过程  
   
 ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter3-topic%20model/formula/15.png)  
   
@@ -25,8 +25,12 @@ Latent Dirichlet Allocation:
 D中每个文档d看作一个单词序列<w1,w2,...,wn>，wi表示第i个单词。D中涉及的所有不同单词组成一个词汇表集合V (vocabulary)，LDA以文档集合D
 作为输入，希望训练出的两个结果向量(假设形成k个topic，V中一共m个词):
 * 1.对每个D中的文档d，对应到不同Topic的概率θd<pt1,...,ptk>，其中，pti表示d对应T中第i个topic的概率。pti=nti/n，其中nti表示d中对应第i个topic的词的数目，n是d中所有词的总数。
-* 2.对每个T中的topic t，生成不同单词的概率φt<pw1,...,pwm>，其中，pwi表示t生成V中第i个单词的概率。pwi=Nwi/N，其中Nwi表示对应到topic t的V中第i个单词的数目，N表示所有对应到topict的单词总数。  
+* 2.对每个T中的topic t，生成不同单词的概率φt<pw1,...,pwm>，其中，pwi表示t生成V中第i个单词的概率。pwi=Nwi/N，其中Nwi表示对应到topic t的V中第i个单词的数目，N表示所有对应到topict的单词总数。  
+  
+  
 **所以LAD的核心公式是：**  
+  
+  
   
   
 ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter3-topic%20model/formula/16.png)  
