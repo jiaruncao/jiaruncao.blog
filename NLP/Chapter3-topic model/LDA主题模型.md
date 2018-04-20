@@ -1,4 +1,4 @@
-## LDA主题模型
+# LDA主题模型
 
 ### 什么是LDA主题模型？
 Latent Dirichlet Allocation:  
