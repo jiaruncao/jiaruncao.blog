@@ -7,7 +7,8 @@
 用Bag of Word 表示Sentences,然后用LR/SVM做回归  
   
 ### Auto-Encoder  
-pic20  
+![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter5-Deep%20Learning%20in%20NLP/formula/20.png)  
+
 
 作用：  
 * 无监督学习，适用于no lable的情况  
