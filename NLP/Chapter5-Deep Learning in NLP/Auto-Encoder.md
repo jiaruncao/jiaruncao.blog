@@ -2,7 +2,8 @@
 
 ### 引子  
 
-**问题原型**：Text("X")->Label("Y")  (文本分类)  
+**问题原型**：Text("X")->Label("Y")  (文本分类)  
+
 行业Baseline:  
 用Bag of Word 表示Sentences,然后用LR/SVM做回归  
   
