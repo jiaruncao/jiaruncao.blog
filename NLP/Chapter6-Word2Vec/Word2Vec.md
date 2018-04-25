@@ -19,8 +19,10 @@
 * 无hidden layers
 * 投影层也可以省略
 * 每个词向量作为log-linear模型的输入  
-目标函数：  
+目标函数：  
+
 ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter6-Word2Vec/formula/25.png)  
+
 
 **语料较大时，Skip-Gram一般比CBOW效果好**  
 ## word2vec存在的问题
