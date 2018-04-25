@@ -8,7 +8,10 @@
 6. Word2Vec
 
 ## 鸣谢  
-该笔记整理自七月在线的(寒小阳老师)[https://blog.csdn.net/han_xiaoyang]和加号老师（新浪微博：@翻滚吧_加号），感谢两位老师所作出的贡献
+该笔记整理自七月在线的  
+(寒小阳老师)[https://blog.csdn.net/han_xiaoyang]  
+加号老师（新浪微博：@翻滚吧_加号）  
+感谢两位老师所作出的贡献！
 ## 作者相关
 Author ：Jiarun Cao    
 Address：Beijing Insitute of Technology  
