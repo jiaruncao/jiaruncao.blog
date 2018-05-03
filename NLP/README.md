@@ -9,8 +9,8 @@
 
 ## 鸣谢  
 该笔记整理自七月在线的  
-[寒小阳老师](https://blog.csdn.net/han_xiaoyang)  
-加号老师（新浪微博：@翻滚吧_加号）  
+* [寒小阳老师](https://blog.csdn.net/han_xiaoyang)  
+* 加号老师（新浪微博：@翻滚吧_加号）  
   
   
   
