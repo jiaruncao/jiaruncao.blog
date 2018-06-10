@@ -9,7 +9,8 @@
   ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter5-Deep%20Learning%20in%20NLP/formula/1.png)  
   
   
-  a<t,t'>代表输出值y<t>在a<t'>上的注意力，使用softmax函数保证a<t,t'>  
+  a<t,t'>代表输出值y<t>在a<t'>上的注意力，使用softmax函数保证a<t,t'>的和等于1  
+  
   ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter5-Deep%20Learning%20in%20NLP/formula/2.png)  
   
   那么，如何计算e呢？  
