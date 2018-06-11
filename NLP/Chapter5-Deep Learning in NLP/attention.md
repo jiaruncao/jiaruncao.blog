@@ -9,8 +9,7 @@
   ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter5-Deep%20Learning%20in%20NLP/formula/1.png)  
   
   
-  a<t,t'>代表输出值y<t>在a<t'>上的注意力，使用softmax函数保证a<t,t'>的和等于1  
-  
+  a<t,t'>代表输出值y<t>在a<t'>上的注意力，使用softmax函数保证a<t,t'>  
   ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter5-Deep%20Learning%20in%20NLP/formula/2.png)  
   
   那么，如何计算e呢？  
@@ -20,4 +19,6 @@
   s<t-1>表示上一个时间步的隐藏状态  
   a<t'>表示第t'个节点的激活函数值  
   
- **缺点**： 时间复杂度是O（x^3）
+ **缺点**： 时间复杂度是O（x^3）  
+ 附上一张attention简图：  
+ ![PicName](https://github.com/jiaruncao/jiaruncao.github.io/blob/master/NLP/Chapter5-Deep%20Learning%20in%20NLP/formula/4.png)
